@@ -1,0 +1,153 @@
+body{
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    line-height:1.6em;
+    margin:0;
+    text-align: center  /* centers the Contact form */
+    
+  /*  background-image:url('wrmcnair.jpg'); */
+}
+
+.clr{
+    clear:both;
+}
+
+/* centers body of text on each page */ 
+.container{
+    width:80%;
+    margin:auto;     
+}
+
+h1{
+    text-align:center;
+    letter-spacing:10px;
+}
+
+#navbar{
+    text-decoration:none; /* no auto underline */
+    font-size:17px;
+    text-align:center;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none; /* no bullets */
+}
+
+#navbar li{
+    
+    display:inline;
+    /* instead of stacked (block), the navigation is all on one line */
+}
+
+#navbar a{
+    text-decoration:none;
+    color:darkgrey;
+    padding-right:20px;
+    /* research how to take the padding off the first Home anchor in the list so it doesn't throw off the center alignment of all the anchors */
+    
+}
+
+#navbar a:hover{
+    color:#906c9f;
+    font-weight:bold;
+}
+
+#navbar a:active{
+    color:darkseagreen;
+    font-weight:bold;
+}
+
+#welcome{
+    float:left;
+    width:60%;
+    padding:45px;
+    box-sizing:border-box;
+    
+    text-align: right;
+}
+
+#photo{
+    float:right;
+    width:40%;
+    box-sizing:border-box;
+    align-content: center;
+}
+
+#foot{
+    font-size:15px;
+    text-align:center;
+}
+
+
+/* media query: makes content responsive to smaller browser screen views; 
+max-width:820px means screen views under 820 will change to the {commands} */
+@media(max-width:820px){
+    #welcome{
+        width:100%;
+        float:none;
+        text-align:left;
+        padding:0;
+    }
+    #photo{
+        width:100%;
+        float:none;
+        align-content:center;
+    }     
+}
+
+
+/* Below is styling for the Contact form */
+
+form{
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+
+.contact-format{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+    color: darkslategrey;  /* User's typing color (ALso Submit button color but used more specific "form .submit" to color the button a different color */
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    
+}
+
+input {
+    height: 35px;
+    color: darkslategrey;
+}
+
+textarea{
+    height: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+
+
+form .submit{
+    background-color:#bba2c5;
+    width: 225px;
+    border-radius: 7px;
+    font-weight:bold;
+    color: #fff;
+}
+
+
+form .submit:hover{
+    background-color:#906c9f;
+    width: 200px;
+    border-radius: 20px;
+    
+}
+
+
+
+
